@@ -52,7 +52,7 @@ wget -r ftp://%ftp_user%:%ftp_pass%@%ftp_host%%ftp_dir%
 @rem Compression des fichiers
 7z.exe a -tzip %File_name_ftp% -r %ftp_host%\*.*
 
-@rem Suppression du répertoire qui à été compresse
+@rem Suppression du répertoire qui à été compresse.
 rmdir /S /Q %ftp_host%
 
 @echo Sauvegarde Termine !
